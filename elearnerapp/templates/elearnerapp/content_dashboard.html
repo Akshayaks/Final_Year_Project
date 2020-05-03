@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+  <title>Home</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo.jpg' %}" rel="icon">
+  <link href="{% static 'img/logo.jpg' %}" rel="apple-touch-icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mamba - v2.0.1
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>  
+      #boxes{
+      content: "";
+      display: table;
+      clear: both;
+      }
+      #leftboxvid { 
+                float:left;  
+                /*background:#ffe6ff; */
+                width:50%; 
+                height:280px; 
+            } 
+            #rightboxvid{ 
+                float:right; 
+                /*background:#cce6ff; */
+                width:50%; 
+                height:280px; 
+            } 
+      #leftboxart { 
+                float:left;  
+                /*background:#ffe6ff; */
+                width:80%; 
+                height:70px; 
+            } 
+            #rightboxart{ 
+                float:right; 
+                /*background:#cce6ff; */
+                width:20%; 
+                height:70px; 
+            } 
+      #leftboxboo { 
+                float:left;  
+                /*background:#ffe6ff; */
+                width:80%; 
+                height:70px; 
+            } 
+            #rightboxboo{ 
+                float:right; 
+                /*background:#cce6ff; */
+                width:20%; 
+                height:70px; 
+            } 
+      #column1{ 
+      background-color: #a1edcc; 
+      } 
+      #column2{ 
+      background-color:#a0e9ed; 
+      width:43%; 
+      } 
+      #column3{ 
+      background-color:#f497f1; 
+      } 
+      h2{ 
+      color: #000000; 
+      text-align:center; 
+      } 
+      #icon-added-book a::before{
+      padding-right: 10px;
+      font-family: "FontAwesome";
+      content: "\f02d";
+    }
+      #icon-added-article a::before{
+      padding-right: 10px;
+      font-family: "FontAwesome";
+      content: "\f044";
+    }
+    </style>
+</head>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Chiron</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="{% static 'img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#">Hi {{ username }} !<i class="la la-angle-down"></i></a></li>
+          <!-- <li><a href="http://127.0.0.1:8000/elearner/{{ username }}/dashboard">Home</a></li> -->
+          <li><a href="http://127.0.0.1:8000/elearner/login">Logout</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Counts Section ======= -->
+  <section class="counts section-bg">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+          <div class="count-box">
+            <i class="icofont-simple-smile" style="color: #20b38e;"></i>
+            <span data-toggle="counter-up">15</span>
+            <p>Units</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="count-box">
+            <i class="icofont-document-folder" style="color: #c042ff;"></i>
+            <span data-toggle="counter-up">70</span>
+            <p>Free Reference Books!</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="count-box">
+            <i class="icofont-live-support" style="color: #46d1ff;"></i>
+            <span data-toggle="counter-up">300</span>
+            <p>Videos</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+          <div class="count-box">
+            <i class="icofont-users-alt-5" style="color: #ffb459;"></i>
+            <span data-toggle="counter-up">485</span>
+            <p>Articles</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="col-lg-12 d-flex flex-column justify-content-center about-content">
+      <div class="section-title">
+        <h2>{{ full_sub }} - {{ unit }}</h2>
+      </div>
+      <div class="description">
+      <main id="boxes">
+      <h4 style="color:purple; font-style: italic;">Prescribed Text Book - </h4><br>
+      
+        <div id="leftboxboo">
+          <div id="icon-added-book">
+            {% if subject == "BM" %}
+        <a href="#" style="color:black; font-size: 100%;">A Textbook on Principles of Management by R.S. Naagarazan (Author), Syed S. Ahamed (Author), New Age International Private Limited; Second edition (2020)</a>
+        {% elif subject == "MM" %}
+        <a href="#" style="color:black; font-size: 100%;">Marketing Management: Concepts, Cases, Challenges and Trends by Rajan (Author), Govinda (Author), Prentice Hall India Learning Private Limited; 2 edition (2007)</a>
+        {% elif subject == "HR" %}
+        <a href="#" style="color:black; font-size: 100%;">Human Resource Management: For Anna University by Pravin Durai (Author), Pearson Publications; (2011)</a>
+        {% endif %}
+      </div>
+      <br>
+      </div>
+      <div id="rightboxboo">
+        <button type="button" class="btn btn-success btn-sm" onclick="CounterStart();">Start</button>
+        <button type="button" class="btn btn-info btn-sm" onclick="CounterPause();">Pause</button>
+        <button type="button" class="btn btn-danger btn-sm" onclick="CounterEnd('{{ subject }}',0.6,'{{ level }}','{{ username }}','{{ unit }}');">Finish</button>
+      </div>
+      <br>
+        <br>
+    
+<!--         <h4 style="color:purple; font-style: italic;">Reference Books - </h4><br>
+        
+          <div id="leftboxboo">
+            <div id="icon-added-book">
+          <a href="#" style="color:black; font-size: 100%;">book name</a>
+        </div>
+        <br>
+        </div>
+        <div id="rightboxboo">
+          <button type="button" class="btn btn-success btn-sm" onclick="CounterStart();">Start</button>
+          <button type="button" class="btn btn-info btn-sm" onclick="CounterPause();">Pause</button>
+          <button type="button" class="btn btn-danger btn-sm"  onclick="CounterEnd('{{ subject }}',0.6,{{ level }});">Finish</button>
+        </div>
+        <br>
+          <br> -->
+
+          <h4 style="color:purple; font-style: italic;">Reference Books- </h4><br>
+      {% for book in books.itertuples %}
+      <div id="leftboxboo">
+        <div id="icon-added-book">
+      <a href={{ book.Link }} style="color:black; font-size: 100%;">{{ book.Description }} by {{book.Author}}</a>
+    </div>
+    <br>
+    </div>
+    <div id="rightboxboo">
+      <button type="button" class="btn btn-success btn-sm" onclick="CounterStart();">Start</button>
+      <button type="button" class="btn btn-info btn-sm" onclick="CounterPause();">Pause</button>
+      <button type="button" class="btn btn-danger btn-sm" onclick="CounterEnd('{{ subject }}',0.6,'{{ level }}','{{ username }}','{{ unit }}');">Finish</button>
+    </div>
+    <br>
+      {% endfor %}
+
+      <br>
+      <h4 style="color:purple; font-style: italic;">Related Articles - </h4><br>
+      {% for key,value in articles.items %}
+      <div id="leftboxart">
+      <div id="icon-added-article">
+      <a href={{ key }} style="color:black; font-size: 100%;">{{ value }}</a>
+    </div>
+  </div>
+      <div id="rightboxart">
+      <button type="button" class="btn btn-success btn-sm" onclick="CounterStart();">Start</button>
+      <button type="button" class="btn btn-info btn-sm"  onclick="CounterPause();">Pause</button>
+      <button type="button" class="btn btn-danger btn-sm"  onclick="CounterEnd('{{ subject }}',0.3,'{{ level }}','{{ username }}','{{ unit }}');">Finish</button>
+    </div>
+      {% endfor %}
+
+
+      <h4 style="color:purple; font-style: italic;">Videos - </h4><br>
+      {% for link in videos %}
+      <div id="leftboxvid">
+      <iframe width="420" height="240" src={{ link }}>
+      </iframe>
+    </div>
+    <div id="rightboxvid">
+      <br>
+      <br>
+      <br>
+      <br>
+      <button type="button" class="btn btn-success btn-sm" onclick="CounterStart();">Start</button>
+      <button type="button" class="btn btn-info btn-sm"  onclick="CounterPause();">Pause</button>
+      <button type="button" class="btn btn-danger btn-sm"  onclick="CounterEnd('{{ subject }}',0.1,'{{ level }}','{{ username }}','{{ unit }}');">Finish</button>
+      <br>
+    </div>
+      {% endfor %}
+      </div>
+
+    </div>
+
+
+  <!-- Modal -->
+<!--   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="card border-light mb-3" style="max-width: 20rem;">
+        <div class="card-body">
+          <p class="card-text">  <strong>Well done!</strong> You have successfully finished this material. <strong>Would you recommend this to a fellow learner?</strong></p>
+          <button type="button" class="btn btn-success btn-sm" id="yesbut" value="yes">Yes</button>
+          <button type="button" class="btn btn-danger btn-sm" id="nobut" value="no">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ -->
+
+  </section><!-- End Services Section -->
+      <script>
+              /*Stop Watch*/
+              var i=1;
+              function CounterStart(){
+                interval=setInterval(function() {
+                    i++;
+                },1000);
+                
+              }
+              function CounterPause(){
+                console.log(i);
+          window.clearInterval(interval);
+            }
+
+
+            
+
+
+            function SendScore(value)
+            {
+              console.log("hello there")
+              // var score=value;
+              // $.ajax({
+              //   type:"POST",
+              //   url: "{% url 'write_to_csv' %}",
+              //   data: {
+              //     'score':score
+              //   },
+              //   dataType: 'json',
+              //   success: function (data) {
+              //       alert(data);
+              //   }
+              // });
+            }
+
+            function CounterEnd(subject,mode,level,username,unit){
+              var subject=subject;
+              var mode=mode;
+              var level=level;
+              var username=username;
+              var unit=unit;
+              // var txt;
+              if (confirm("Would you recommend this to a fellow learner?")) {
+                score = 1;
+              } else {
+                score = -1;
+              }
+              // console.log(txt);
+              // $('.myModal').find('button[id="yesbut"]').click(function(){
+              //   console.log("sup bro");
+              //   score=1;
+              // })
+              // $('.myModal').find('nobut').click(function(){
+              //   score=-1;
+              // })
+              // console.log(score);
+              $.ajax({
+                type:"POST",
+                url: "{% url 'write_to_csv' %}",
+                data: {
+                  'timer': i,
+                  'subject':subject,
+                  'mode':mode,
+                  'level':level,
+                  'score':score,
+                  'username':username,
+                  'unit':unit
+                },
+                // dataType: 'json',
+                // success: function (data) {
+                //     alert(data);
+                // }
+              }).done(function (data) {
+                if (data.success) {
+                    window.location.href = data.url;
+                }    
+                else {
+                    window.location.href = data.url2;
+                }
+            });
+
+              /*End*/
+            }
+
+
+          
+      </script>
+	<!-- password-script -->
+	<script type="text/javascript">
+		window.onload = function () {
+			document.getElementById("password1").onchange = validatePassword;
+			document.getElementById("password2").onchange = validatePassword;
+		}
+
+		function validatePassword() {
+			var pass2 = document.getElementById("password2").value;
+			var pass1 = document.getElementById("password1").value;
+			if (pass1 != pass2)
+				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+			else
+				document.getElementById("password2").setCustomValidity('');
+			//empty string means no validation error
+		}
+	</script>
+
+  <!-- Display the countdown timer in an element -->
+
+
+	<!-- Vendor JS Files -->
+
+	<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+	<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+	<script src="{% static 'vendor/jquery-sticky/jquery.sticky.js' %}"></script>
+	<script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+	<script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+	<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+	<!-- Template Main JS File -->
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
