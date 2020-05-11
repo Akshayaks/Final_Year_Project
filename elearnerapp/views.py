@@ -107,6 +107,11 @@ def write_to_csv(request):
     user_obj=User.objects.get(username=username)
     userid=user_obj.pk
 
+    if mode == 0.6:
+        time = time*100
+    elif mode == 0.3:
+        time = time*60
+
     bool_diag=calc(userid,time,mode,level,subject)
     print("inside view1",bool_diag)
 

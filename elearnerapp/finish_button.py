@@ -40,10 +40,13 @@ def calc(userid,time,mode,level,course): #returns 1 if current rate > threshold,
 	df.to_csv("lr.csv")
 
 	userids, rate, threshold = dataset[rowno]
+	print(rate)
+	print(userids)
 
 	if (rate < threshold):
 		ret = 0
 	else:
+		print("ready for test")
 		ret = 1
 
 	return ret
