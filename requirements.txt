@@ -35,9 +35,6 @@ sqlparse==0.3.0
 tensorboard==2.1.1
 tensorflow==2.1.0
 tensorflow-estimator==2.1.0
-tf2-kdl==0.5.18
-tf2-py==0.5.18
-tf2-ros==0.5.18
 urllib3==1.25.9
 virtualenv==20.0.7
 virtualenv-clone==0.5.3
