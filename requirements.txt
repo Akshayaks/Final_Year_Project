@@ -8,6 +8,6 @@ pandas==0.24.2
 requests==2.23.0
 django_heroku==0.3.1
 beautifulsoup4==4.9.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 scikit_learn==0.22.2.post1
 seaborn==0.10.1
